@@ -44,7 +44,7 @@ useHead({
         <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <!-- Repeat this block for each project -->
           <div class="flex flex-col gap-1 rounded-sm bg-white-secondary p-4 dark:bg-black-secondary border border-[#ffffff2e]">
-            <a class="text-dark-primary text-xl font-semibold dark:text-white-primary" href="https://trimbletech-attendance.netlify.app/" rel="noreferrer noopener" target="_blank">Attendance Recovery (Senior Project)</a>
+            <a class="text-dark-primary text-xl font-semibold dark:text-white-primary" href="https://trimbletech-attendance.netlify.app" rel="noreferrer noopener" target="_blank">Attendance Recovery (Senior Project)</a>
             <p class="mb-5 text-dark-secondary dark:text-white-primary">During my senior year of high school, I noticed that many students were unaware they needed attendance recovery—a requirement that could prevent them from graduating on time. There was no system in place to notify students of their attendance status, which led to confusion and last-minute surprises.
 
 To solve this problem, I designed and built a simple web application that allows seniors to enter their student ID number and instantly see whether they need attendance recovery, along with details about the assigned room and time. This tool helped ensure that all seniors had clear, accessible information about their attendance requirements, making it easier for them to take action and avoid graduation delays.</p>
