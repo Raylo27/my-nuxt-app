@@ -1,89 +1,136 @@
-<script setup>
-useHead({
-  title: 'Raylen Williams | Software Developer',
-  meta: [
-    { name: 'description', content: 'Software developer from Fort Worth. Lover of all things programming.' }
-  ]
-})
-</script>
 
 <template>
   <div class="container mx-auto flex h-full min-h-screen flex-col px-8 py-4">
-    <nav class="mb-8">
-      <a href="/" class="text-3xl text-black-primary dark:text-white-primary">Raylen Williams</a>
-    </nav>
+    <!-- Navigation -->
+    <nav class="mb-12 flex items-center justify-between">
+  <a href="/" class="flex items-center">
+    <!-- Replace with your logo image if you wish -->
+    <img src="/favicon.ico" alt="Raylen Logo" class="w-16 h-16 rounded mr-4" />
+    <!-- Or, if you prefer text: -->
+    <!-- <span class="text-5xl font-extrabold text-green-800 dark:text-green-200">Raylen Williams</span> -->
+  </a>
+  <div class="flex gap-12">
+    <a href="#about" class="text-2xl font-semibold hover:text-green-700 dark:hover:text-green-300 transition">About</a>
+    <a href="#projects" class="text-2xl font-semibold hover:text-green-700 dark:hover:text-green-300 transition">Projects</a>
+    <a href="#contact" class="text-2xl font-semibold hover:text-green-700 dark:hover:text-green-300 transition">Contact</a>
+  </div>
+</nav>
+
+
     <div class="flex w-full flex-col gap-12 pb-8">
-      <section id="about" class="grid grid-cols-1 items-center gap-4 lg:grid-cols-2">
+      <!-- Hero/About Section -->
+      <section id="about" class="grid grid-cols-1 items-center gap-8 lg:grid-cols-2">
         <div class="flex flex-col gap-4">
-          <h1 class="text-5xl font-bold text-black-primary lg:text-6xl dark:text-white-primary">
+          <h1 class="text-5xl font-extrabold text-green-900 lg:text-6xl dark:text-green-200">
             <span class="text-[color:var(--highlight)] duration-300">Hi,</span> I'm Raylen
           </h1>
-          <p class="text-xl text-black-primary dark:text-white-primary">
-            I am a software developer from Fort Worth. Lover of all things programming. Lately I have been...
+          <h2 class="text-2xl font-semibold text-green-700 dark:text-green-300">
+            Building digital solutions for a healthier, greener world.
+          </h2>
+          <p class="text-xl text-gray-800 dark:text-green-100">
+            I’m a Junior Computer Science major at PVAMU, passionate about using code to bridge the gap between technology, agriculture, and community health. My work blends software, IoT, and data to help farmers, researchers, and families thrive.
           </p>
-          <p class="text-dark-primary text-xl dark:text-white-primary">
-            I am a Junior Computer Science major at the University Of PVAMU.
-          </p>
-          <div class="flex gap-4">
-            <!-- Social links here -->
-            <a aria-label="Link to my Github" href="https://github.com/Raylo27" rel="noreferrer noopener" target="_blank">
-              <svg fill="none" viewBox="0 0 61 65" xmlns="http://www.w3.org/2000/svg" class="aspect-square size-12 rounded-sm bg-black-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)] dark:bg-white-primary dark:text-black-primary"><path d="M60.258 23.833A17.781 17.781 0 0 0 56.3 12.715a17.932 17.932 0 0 0-.772-10.813 2.385 2.385 0 0 0-1.503-1.38c-.966-.33-4.621-.951-12.07 3.876a35.975 35.975 0 0 0-9.82-1.185c-3.317-.06-6.627.34-9.835 1.186C14.66-.54 10.686.26 9.886.495a2.414 2.414 0 0 0-1.504 1.407 17.93 17.93 0 0 0-.8 10.786 16.849 16.849 0 0 0-3.944 11.2c0 15.255 8.73 19.862 16.73 21.49a12.89 12.89 0 0 0-.84 3.13 1.336 1.336 0 0 0 0 .346v4.22c-7.283.607-8.841-3.655-8.993-4.138a3.208 3.208 0 0 0-.126-.331 12.207 12.207 0 0 0-6.896-6.138 2.414 2.414 0 1 0-1.53 4.58 7.295 7.295 0 0 1 3.917 3.35c.966 3.131 4.911 8.083 13.6 7.531v3.973a2.414 2.414 0 0 0 4.828 0V49.032a6.899 6.899 0 0 1 1.75-3.766A2.4 2.4 0 0 0 24.7 41.13c-8.414-.98-16.192-3.752-16.192-17.338h-.001a11.867 11.867 0 0 1 3.53-8.855 2.564 2.564 0 0 0 .553-2.565 11.955 11.955 0 0 1-.152-7.31 20.979 20.979 0 0 1 8.151 3.82 2.47 2.47 0 0 0 2.124.29 29.81 29.81 0 0 1 9.463-1.283c3.198-.084 6.388.35 9.448 1.283a2.457 2.457 0 0 0 2.124-.29 21.672 21.672 0 0 1 7.807-3.794 12.21 12.21 0 0 1-.18 7.38 2.388 2.388 0 0 0 .47 2.345 13.437 13.437 0 0 1 3.627 8.979c0 13.558-8.18 16.372-16.193 17.338a2.401 2.401 0 0 0-1.158 4.318c.855.648 1.848 2.468 1.848 5.516v10.924a2.413 2.413 0 1 0 4.827 0V50.964a14.707 14.707 0 0 0-1.034-5.614c6.482-1.378 16.496-5.64 16.496-21.517Z" fill="currentColor"></path></svg>
+          <ul class="flex flex-wrap gap-3 mt-2">
+            <li class="bg-green-100 text-green-800 rounded-full px-4 py-1 font-semibold">🌱 Agri-Tech</li>
+            <li class="bg-blue-100 text-blue-800 rounded-full px-4 py-1 font-semibold">💻 Software Dev</li>
+            <li class="bg-yellow-100 text-yellow-800 rounded-full px-4 py-1 font-semibold">📊 Data for Health</li>
+            <li class="bg-red-100 text-red-800 rounded-full px-4 py-1 font-semibold">🥗 Food Security</li>
+          </ul>
+          <div class="flex gap-4 mt-4">
+            <a aria-label="GitHub" href="https://github.com/Raylo27" rel="noreferrer noopener" target="_blank"
+              class="rounded-full bg-green-800 p-2 hover:bg-green-600 text-white shadow-lg">
+              <!-- GitHub SVG -->
+              <svg fill="none" viewBox="0 0 61 65" xmlns="http://www.w3.org/2000/svg" class="size-8">
+                <path d="M60.258 23.833A17.781 17.781 0 0 0 56.3 12.715a17.932 17.932 0 0 0-.772-10.813 2.385 2.385 0 0 0-1.503-1.38c-.966-.33-4.621-.951-12.07 3.876a35.975 35.975 0 0 0-9.82-1.185c-3.317-.06-6.627.34-9.835 1.186C14.66-.54 10.686.26 9.886.495a2.414 2.414 0 0 0-1.504 1.407 17.93 17.93 0 0 0-.8 10.786 16.849 16.849 0 0 0-3.944 11.2c0 15.255 8.73 19.862 16.73 21.49a12.89 12.89 0 0 0-.84 3.13 1.336 1.336 0 0 0 0 .346v4.22c-7.283.607-8.841-3.655-8.993-4.138a3.208 3.208 0 0 0-.126-.331 12.207 12.207 0 0 0-6.896-6.138 2.414 2.414 0 1 0-1.53 4.58 7.295 7.295 0 0 1 3.917 3.35c.966 3.131 4.911 8.083 13.6 7.531v3.973a2.414 2.414 0 0 0 4.828 0V49.032a6.899 6.899 0 0 1 1.75-3.766A2.4 2.4 0 0 0 24.7 41.13c-8.414-.98-16.192-3.752-16.192-17.338h-.001a11.867 11.867 0 0 1 3.53-8.855 2.564 2.564 0 0 0 .553-2.565 11.955 11.955 0 0 1-.152-7.31 20.979 20.979 0 0 1 8.151 3.82 2.47 2.47 0 0 0 2.124.29 29.81 29.81 0 0 1 9.463-1.283c3.198-.084 6.388.35 9.448 1.283a2.457 2.457 0 0 0 2.124-.29 21.672 21.672 0 0 1 7.807-3.794 12.21 12.21 0 0 1-.18 7.38 2.388 2.388 0 0 0 .47 2.345 13.437 13.437 0 0 1 3.627 8.979c0 13.558-8.18 16.372-16.193 17.338a2.401 2.401 0 0 0-1.158 4.318c.855.648 1.848 2.468 1.848 5.516v10.924a2.413 2.413 0 1 0 4.827 0V50.964a14.707 14.707 0 0 0-1.034-5.614c6.482-1.378 16.496-5.64 16.496-21.517Z" fill="currentColor"></path>
+              </svg>
             </a>
-            <a aria-label="Link to my LinkedIn" href="https://www.linkedin.com/in/raylen-williams" rel="noreferrer noopener" target="_blank">
-              <svg viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg" class="aspect-square size-12 rounded-sm bg-black-primary p-2 text-white-primary duration-300 hover:text-[color:var(--highlight)] dark:bg-white-primary dark:text-black-primary"><path d="M100.28 448H7.4V148.9h92.88V448ZM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3ZM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448h-.1Z" fill="currentColor"></path></svg>
+            <a aria-label="LinkedIn" href="https://www.linkedin.com/in/raylen-williams" rel="noreferrer noopener" target="_blank"
+              class="rounded-full bg-green-800 p-2 hover:bg-green-600 text-white shadow-lg">
+              <!-- LinkedIn SVG -->
+              <svg viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg" class="size-8">
+                <path d="M100.28 448H7.4V148.9h92.88V448ZM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3ZM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448h-.1Z" fill="currentColor"></path>
+              </svg>
             </a>
           </div>
         </div>
-
-       <picture class="order-first mx-auto w-9/12 lg:order-1 lg:mr-0 lg:w-fit lg:text-right max-w-xs xl:max-w-full"><!--[--><source type="image/webp" sizes="(max-width: 640px) 320px, (max-width: 768px) 640px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="/public/RaylenHomepic.png 320w, /public/RaylenHomepic.png 640w, /public/RaylenHomepic.png 768w, /public/RaylenHomepic.png 1024w, /public/RaylenHomepic.png 1280w, /public/RaylenHomepic.png 1536w, /public/RaylenHomepic.png 2048w, /public/RaylenHomepic.png 2560w, /public/RaylenHomepic.png 3072w"><!--]--><img alt="Image of Mads Hougesen" onerror="this.setAttribute('data-error', 1)" class="mr-auto lg:mr-0 ml-auto lg:text-right" data-nuxt-pic="" src="/public/RaylenHomepic.png" sizes="(max-width: 640px) 320px, (max-width: 768px) 640px, (max-width: 1024px) 768px, (max-width: 1280px) 1024px, (max-width: 1536px) 1280px, 1536px" srcset="/public/RaylenHomepic.png 320w, /public/RaylenHomepic.png 640w, /public/RaylenHomepic.png 768w, /public/RaylenHomepic.png 1024w, /public/RaylenHomepic.png 1280w, /public/RaylenHomepic.png 1536w, /public/RaylenHomepic.png 2048w, /public/RaylenHomepic.png 2560w, /public/RaylenHomepic.png 3072w"></picture>
+        <picture class="order-first mx-auto w-9/12 lg:order-1 lg:mr-0 lg:w-fit lg:text-right max-w-xs xl:max-w-full">
+          <img alt="Raylen Williams" class="rounded-xl shadow-lg border-4 border-green-400" src="/RaylenHomepic.png" width="320" height="320" />
+        </picture>
       </section>
 
-      <!-- Projects Section -->
-      <section id="projects" class="flex flex-col gap-8">
-        <h2 class="text-4xl font-bold text-black-primary lg:text-5xl dark:text-white-primary">Projects</h2>
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
-          <!-- Repeat this block for each project -->
-          <div class="flex flex-col gap-1 rounded-sm bg-white-secondary p-4 dark:bg-black-secondary border border-[#ffffff2e]">
-            <a class="text-dark-primary text-xl font-semibold dark:text-white-primary" href="https://trimbletech-attendance.netlify.app" rel="noreferrer noopener" target="_blank">Attendance Recovery (Senior Project)</a>
-            <p class="mb-5 text-dark-secondary dark:text-white-primary">During my senior year of high school, I noticed that many students were unaware they needed attendance recovery—a requirement that could prevent them from graduating on time. There was no system in place to notify students of their attendance status, which led to confusion and last-minute surprises.
+<section id="projects" class="flex flex-col gap-10">
+  <h2 class="text-4xl font-extrabold text-green-900 tracking-tight mb-2 border-b-4 border-green-400 pb-2 w-fit mx-auto bg-gradient-to-r from-green-100 via-yellow-100 to-green-200 rounded-xl shadow-lg">
+    Projects
+  </h2>
+  <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Project Card Example -->
+    <div class="flex flex-col gap-4 rounded-3xl border-4 border-green-500 bg-gradient-to-br from-green-100 via-yellow-50 to-green-200 dark:from-green-800 dark:via-green-900 dark:to-green-700 p-8 shadow-2xl hover:scale-105 hover:border-yellow-400 hover:shadow-yellow-300/40 transition-all duration-300">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="inline-block bg-green-400 text-white font-bold px-3 py-1 rounded-full text-xs shadow">Featured</span>
+        <span class="inline-block bg-yellow-200 text-yellow-900 font-semibold px-2 py-1 rounded-full text-xs">2021</span>
+      </div>
+      <a class="text-green-900 text-2xl font-bold dark:text-green-100 hover:underline" href="https://trimbletech-attendance.netlify.app" target="_blank" rel="noopener noreferrer">
+        Attendance Recovery (Senior Project)
+      </a>
+      <p class="mb-4 text-green-800 dark:text-green-100 text-base leading-relaxed">
+        Built a web app to help students track attendance recovery, supporting academic success and wellness.
+      </p>
+      <div class="flex gap-2 flex-wrap mt-auto">
+        <span class="rounded-full px-3 py-1 bg-yellow-300 text-yellow-900 text-sm font-semibold shadow-sm">Nuxt.js</span>
+        <span class="rounded-full px-3 py-1 bg-blue-300 text-blue-900 text-sm font-semibold shadow-sm">JavaScript</span>
+        <span class="rounded-full px-3 py-1 bg-green-300 text-green-900 text-sm font-semibold shadow-sm">Vue</span>
+      </div>
+    </div>
+    <!-- Add more project cards below, each with its own color accent if desired -->
+    <!-- Example for a second project -->
+    <div class="flex flex-col gap-4 rounded-3xl border-4 border-blue-400 bg-gradient-to-br from-blue-50 via-green-50 to-blue-100 dark:from-blue-900 dark:via-green-900 dark:to-blue-800 p-8 shadow-2xl hover:scale-105 hover:border-green-400 hover:shadow-green-300/40 transition-all duration-300">
+      <div class="flex items-center gap-3 mb-2">
+        <span class="inline-block bg-blue-400 text-white font-bold px-3 py-1 rounded-full text-xs shadow">New</span>
+        <span class="inline-block bg-green-200 text-green-900 font-semibold px-2 py-1 rounded-full text-xs">2025</span>
+      </div>
+      <a class="text-blue-900 text-2xl font-bold dark:text-blue-100 hover:underline" href="#" target="_blank" rel="noopener noreferrer">
+        Crop Data Dashboard
+      </a>
+      <p class="mb-4 text-blue-800 dark:text-blue-100 text-base leading-relaxed">
+        Visualizes soil health and crop growth using real-time sensors.
+      </p>
+      <div class="flex gap-2 flex-wrap mt-auto">
+        <span class="rounded-full px-3 py-1 bg-green-200 text-green-900 text-sm font-semibold shadow-sm">IoT</span>
+        <span class="rounded-full px-3 py-1 bg-blue-200 text-blue-900 text-sm font-semibold shadow-sm">React</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-To solve this problem, I designed and built a simple web application that allows seniors to enter their student ID number and instantly see whether they need attendance recovery, along with details about the assigned room and time. This tool helped ensure that all seniors had clear, accessible information about their attendance requirements, making it easier for them to take action and avoid graduation delays.</p>
-            <div class="mt-auto flex gap-2">
-              <div class="rounded-sm px-2 py-1" style="background-color:#dea584;">
-                <p class="text-sm font-medium brightness-50" style="color:#dea584;">Nuxt.js</p>
-              </div>
-              <div class="rounded-sm px-2 py-1" style="background-color:#f1e05a;">
-                <p class="text-sm font-medium brightness-50" style="color:#f1e05a;">JavaScript</p>
-              </div>
-              <div class="rounded-sm px-2 py-1" style="background-color:#3178c6;">
-                <p class="text-sm font-medium brightness-50" style="color:#3178c6;">Vue</p>
-              </div>
-            </div>
-          </div>
-          <!-- ...add more project cards here... -->
-        </div>
-      </section>
+
+
 
       <!-- Interest Section -->
       <section class="flex flex-col gap-4">
-        <h2 class="text-4xl font-bold text-black-primary lg:text-5xl dark:text-white-primary mb-4">Interest</h2>
-        <a href="https://www.foodconnectgroup.org/news/tech-led-solutions-to-address-food-insecurity-during-a-global-pandemic" class="transition-300 text-xl underline">Tech Led Solutions to Address Food Insecurity during a Global Pandemicy</a>
-        <a href="https://medium.com/@ZaraSyed_GoodIntentions/bridging-the-gap-tech-solutions-for-food-insecurity-and-waste-reduction-61202c661d33" class="transition-300 text-xl underline">Bridging the Gap: Tech Solutions for Food Insecurity and Waste Reduction</a>
-        <a href="https://www.ama.org/2025/03/11/why-low-income-consumers-avoid-healthy-foods-and-how-to-change-their-minds/" class="transition-300 text-xl underline">Why Low-Income Consumers Avoid Healthy Foods—and How to Change Their Minds</a>
+        <h2 class="text-4xl font-bold text-green-800 lg:text-5xl dark:text-green-200 mb-4">Interests</h2>
+        <a href="https://www.foodconnectgroup.org/news/tech-led-solutions-to-address-food-insecurity-during-a-global-pandemic" class="transition-300 text-xl underline text-green-700 hover:text-green-900">
+          Tech Led Solutions to Address Food Insecurity during a Global Pandemic
+        </a>
+        <a href="https://medium.com/@ZaraSyed_GoodIntentions/bridging-the-gap-tech-solutions-for-food-insecurity-and-waste-reduction-61202c661d33" class="transition-300 text-xl underline text-green-700 hover:text-green-900">
+          Bridging the Gap: Tech Solutions for Food Insecurity and Waste Reduction
+        </a>
+        <a href="https://www.ama.org/2025/03/11/why-low-income-consumers-avoid-healthy-foods-and-how-to-change-their-minds/" class="transition-300 text-xl underline text-green-700 hover:text-green-900">
+          Why Low-Income Consumers Avoid Healthy Foods—and How to Change Their Minds
+        </a>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="flex flex-col gap-2">
-        <h2 class="text-4xl font-bold text-black-primary lg:text-5xl dark:text-white-primary">Wanna get in touch?</h2>
-        <p class="text-xl text-black-primary dark:text-white-primary">I am always available for exciting discussions</p>
+        <h2 class="text-4xl font-bold text-green-800 lg:text-5xl dark:text-green-200">Get in touch</h2>
+        <p class="text-xl text-gray-800 dark:text-green-100">I am always available for exciting discussions and collaborations in tech, agriculture, and health.</p>
         <div>
           <div class="my-2 flex items-center gap-2">
-            <!-- Email SVG icon here -->
-            <a class="text-xl text-black-primary underline dark:text-white-primary" href="mailto:jabari22004@gmail.com">jabari22004@gmail.com</a>
+            <span class="font-bold text-green-800 dark:text-green-200">Email:</span>
+            <a class="text-xl underline text-green-700 hover:text-green-900 dark:text-green-100" href="mailto:jabari22004@gmail.com">jabari22004@gmail.com</a>
           </div>
           <div class="mb-4 flex items-center gap-2">
-            <!-- Location SVG icon here -->
-            <p class="text-xl text-black-primary dark:text-white-primary">Fort Worth, TX</p>
+            <span class="font-bold text-green-800 dark:text-green-200">Location:</span>
+            <span class="text-xl text-gray-800 dark:text-green-100">Fort Worth, TX</span>
           </div>
         </div>
         <div class="flex gap-4">
@@ -95,8 +142,10 @@ To solve this problem, I designed and built a simple web application that allows
 </template>
 
 
+
  <style>
      /*! tailwindcss v4.1.8 | MIT License | https://tailwindcss.com */
+
 
      @layer properties {
          @supports ((-webkit-hyphens:none) and (not (margin-trim:inline))) or ((-moz-orient:inline) and (not (color:rgb(from red r g b)))) {
@@ -1629,7 +1678,7 @@ To solve this problem, I designed and built a simple web application that allows
      }
 
      :root {
-         --highlight: red
+         --highlight: #4caf50;
      }
 
      body {
@@ -1762,13 +1811,7 @@ To solve this problem, I designed and built a simple web application that allows
  <meta property="og:type" content="website">
  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
  <meta name="author" content="Raylen Williams">
- <meta name="description" content="Software developer from Denmark. Lover of all things programming - but  always learning new stuff.">
- <meta property="og:description" content="Software developer from Denmark. Lover of all things programming - but  always learning new stuff.">
  <meta property="og:site_name" content="Raylen Wiliiams">
  <meta property="og:title" content="Raylen Williams | Software Developer">
  <meta name="twitter:card" content="summary_large_image">
- <meta name="twitter:creator" content="mads_hougesen">
- <meta name="twitter:site" content="@mads_hougesen">
  <script type="module" src="/_nuxt/PY4qTGxL.js" crossorigin></script>
- <link rel="canonical" href="https://mhouge.dk/">
- <meta property="og:url" content="https://mhouge.dk/">
